@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @wedding.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @wedding.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @wedding.location %>
+</p>
+
+<p>
+  <strong>Guests:</strong>
+  <%= @wedding.guests %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @wedding.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_wedding_path(@wedding) %> |
+<%= link_to 'Back', weddings_path %>
